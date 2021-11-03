@@ -9,13 +9,15 @@ for ($numbers = 1; $numbers < 1001; $numbers++)
             $counter++;
             break;
             }
+            echo '<br>'.$numbers.'</br>';
         }
     if ($counter === 0 && $numbers !== 1)
     {
-        echo '<br>'.$numbers.'</br>';
+        // echo $numbers.'</br>';
     
     }
    
 }
+
 
 
