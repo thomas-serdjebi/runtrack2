@@ -1,6 +1,6 @@
 <?php
 
-for ($var = 0; $var < 100 ; $var++) {
+for ($var = 0; $var < 101 ; $var++) {
     if ( $var < 21) {
         echo '<i>'. $var . '</i><br/>';
     }
