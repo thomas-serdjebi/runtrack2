@@ -1,11 +1,13 @@
 <?php
-    $var = 0;
-    while( $var < 1300 ) {
-        if ($var <> 26 && $var <> 37 && $var <> 88)
-        {echo $var = $var + 1 ;
-        echo "<br/>";}
+for ($var = 0; $var < 1338; $var=$var+1) {
+    if ($var== 26)
+    {
 
     }
+    elseif ($var === 27 && $var === 88 && $var === 1111 )
+    {
 
-?>
-    
+    }
+    else
+    echo $var.'</br>';
+}
