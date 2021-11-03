@@ -1,12 +1,10 @@
 <?php
     $var = 0;
-    while( $var < 1337 ) {
-        echo $var = $var + 1 ;
-        echo "<br/>";
-        if ($var == 42) {
-            echo '<b> <u> 42 </b> </u> <br/>';
-            
-        }
+    while( $var < 1300 ) {
+        if ($var <> 26 && $var <> 37 && $var <> 88)
+        {echo $var = $var + 1 ;
+        echo "<br/>";}
+
     }
 
 ?>
