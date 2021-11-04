@@ -1,0 +1,72 @@
+TABS
+premiere lettre chaine de caractère commence avec l'index 0.
+
+$STR = "LA PLATEFORME"
+index : 0123456789...
+
+afficher un caractère d'une string
+
+echo $STR[0] // affiche L 
+
+
+echo $STR[3] // affiche P
+
+afficher tous les caracteres d'une string caractere par caractere :
+
+$i=0
+while ($i<=12) //on met 12 car il y 13 caracteres dans al chaine//
+{ echo $string[$i];
+$i++ {
+Si erreur OFFSET => nombre caracteres donnés trop grands
+
+AFFICHER LE NOMBRE DE CARACTERES
+
+echo {$si}
+
+afficher le nombre de caracteres quand il y en a beaucoup
+
+$string = " LA PLATEFORME LA PLATEFORME"
+
+$i = 0;
+isset()
+while (isset($string[$i]) == true ) {
+echo $string[$i]
+$i++}
+echo $i
+
+fonction vardump pour connaitre nombre de caracteres et le type
+
+$string = "Ruben";
+$i=0;
+var_dump($string);
+
+isset()
+while (isset($string[$i]) == true ) {
+echo $string[$i]
+$i++}
+echo $i
+
+
+
+
+TABLEAUX ( plusieurs façons de le définir )
+
+
+$array = ["RUBEN", "HABIB"]
+echo ($array) ; ==> AFFICHE ERREUR STRING TO ARRAY
+il faut faire 
+var_dump($array)
+affiche : 0 STRING RUBEN TAILLE 5
+	  1 STRING HABIB TAILLE 5
+
+Pour afficher que le premier élément RUBEN
+
+var_dump($array[0])
+
+Pour afficher la premiere lettre de RUBEN
+
+var_dump($array[0][0])
+
+changer le nom de l'index
+
+$array = array (
