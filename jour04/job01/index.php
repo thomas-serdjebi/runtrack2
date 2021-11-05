@@ -1,9 +1,15 @@
 <?php
-
-    var_dump($_GET);
+    $i=0;
+    foreach ($_GET as $value) {
+        if (isset($_GET)==true)
+        $i++;
+        
+    }
+    echo $i;
+    
+?>
     
 
-?>
 
 <form action="./index.php" method="get">
     <div>
