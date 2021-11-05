@@ -1,11 +1,14 @@
+<!-- FORMULAIRE -->
 <?php
-    
+$new_str = "";
 
-
-
+foreach ($_GET as $key => $value){ 
+    $new_str = $new_str. "<tr>
+            <td> $key </td>
+            <td> $value </td>
+        <tr>";
+}    
 ?>
-
-
 <form action="./index.php" method="get">
     <div>
         <label for="name">Nom :</label>
@@ -40,55 +43,41 @@
     </div>
 </form>
 
+<!-- TABLEAU -->
+<!--  foreach ($_GET as $key => $value){ 
+          
+          echo "<tr>
+          <td> $key </td>
+          <td> $value </td>
+      <tr>";
+}         -->
 <table>
     <thead>
         <tr>
-            <td>Argument</td>
-            <td>Valeur</td>
-        <tr>
+            <th>Argument</th>
+            <th>Valeur</th>
+        </tr>
     </thead>
-    <tbody>
-        <tr>
-            <td>Nom</td>
-            <td><?php if (isset($_GET["user_name"])) {
-                echo $_GET["user_name"];}?>
-        </tr>
-        <tr>
-            <td>Prénom</td>
-            <td><?php if (isset($_GET["user_surname"])) {
-                echo $_GET["user_surname"];}?>
-        </tr>
-        <tr>
-            <td>Âge</td>
-            <td><?php if (isset($_GET["user_age"])) {
-                echo $_GET["user_age"];}?>
-        </tr>
-        <tr>
-            <td>Email</td>
-            <td><?php if (isset($_GET["user_email"])) {
-                echo $_GET["user_email"];}?>
-        </tr>
-        <tr>
-            <td>Adresse</td>
-            <td><?php if (isset($_GET["user_address"])) {
-                echo $_GET["user_address"];}?>
-        </tr>
-        <tr>
-            <td>Code Postal</td>
-            <td><?php if (isset($_GET["user_codepostal"])) {
-                echo $_GET["user_codepostal"];}?>
-        </tr>
-        <tr>
-            <td>Ville</td>
-            <td><?php if (isset($_GET["user_city"])) {
-                echo $_GET["user_city"];}?>
-        </tr>
 
+    <tbody>
         
-     
+            <?php echo $new_str;?>
+        
+        
     </tbody>
-           
+
 </table>
+
+<?php var_dump($_GET); 
+
+    
+
+
+?>
+
+
+
+
 
 
   

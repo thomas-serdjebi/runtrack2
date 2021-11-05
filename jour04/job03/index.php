@@ -11,7 +11,7 @@
     
 
 
-<form action="./index.php" method="post">
+<form action="./index.php" method="POST">
     <div>
         <label for="name">Nom :</label>
         <input type="text" id="name" name="user_name">
