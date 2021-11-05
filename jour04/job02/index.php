@@ -45,7 +45,7 @@ foreach ($_GET as $key => $value){
     </div>
 </form>
 
-<!-- TABLEAU -- code de base sans technique propre de Jojo>
+<!-- TABLEAU -- code de base sans technique propre de Jojo-->
 <!--  foreach ($_GET as $key => $value){ 
           
           echo "<tr>

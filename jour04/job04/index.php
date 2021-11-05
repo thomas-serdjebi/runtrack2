@@ -1,4 +1,14 @@
+<!-- FORMULAIRE -->
+<?php
+$new_str = "";
 
+foreach ($_POST as $key => $value){ 
+    $new_str = $new_str. "<tr>
+            <td> $key </td>
+            <td> $value </td>
+        <tr>";
+}    
+?>
 
 
 <form action="./index.php" method="post">
@@ -35,52 +45,46 @@
     </div>
 </form>
 
+<!-- TABLEAU -- code de base sans technique propre de Jojo-->
+<!--  foreach ($_GET as $key => $value){ 
+          
+          echo "<tr>
+          <td> $key </td>
+          <td> $value </td>
+      <tr>";
+}         -->
+
+
+
 <table>
     <thead>
         <tr>
-            <td>Argument</td>
-            <td>Valeur</td>
-        <tr>
+            <th>Argument</th>
+            <th>Valeur</th>
+        </tr>
     </thead>
-    <tbody>
-        <tr>
-            <td>Nom</td>
-            <td><?php if (isset($_POST["user_name"])) {
-                echo $_POST["user_name"];}?>
-        </tr>
-        <tr>
-            <td>Prénom</td>
-            <td><?php if (isset($_POST["user_surname"])) {
-                echo $_POST["user_surname"];}?>
-        </tr>
-        <tr>
-            <td>Âge</td>
-            <td><?php if (isset($_POST["user_age"])) {
-                echo $_POST["user_age"];}?>
-        </tr>
-        <tr>
-            <td>Email</td>
-            <td><?php if (isset($_POST["user_email"])) {
-                echo $_POST["user_email"];}?>
-        </tr>
-        <tr>
-            <td>Adresse</td>
-            <td><?php if (isset($_POST["user_address"])) {
-                echo $_POST["user_address"];}?>
-        </tr>
-        <tr>
-            <td>Code Postal</td>
-            <td><?php if (isset($_POST["user_codepostal"])) {
-                echo $_POST["user_codepostal"];}?>
-        </tr>
-        <tr>
-            <td>Ville</td>
-            <td><?php if (isset($_POST["user_city"])) {
-                echo $_POST["user_city"];}?>
-        </tr>
 
+    <tbody>
         
-     
+            <?php echo $new_str;?>
+        
+        
     </tbody>
-           
+
 </table>
+
+<?php var_dump($_GET); 
+
+    
+
+
+?>
+
+
+
+
+
+
+  
+    
+
