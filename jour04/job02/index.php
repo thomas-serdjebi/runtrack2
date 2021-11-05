@@ -9,6 +9,8 @@ foreach ($_GET as $key => $value){
         <tr>";
 }    
 ?>
+
+
 <form action="./index.php" method="get">
     <div>
         <label for="name">Nom :</label>
@@ -43,7 +45,7 @@ foreach ($_GET as $key => $value){
     </div>
 </form>
 
-<!-- TABLEAU -->
+<!-- TABLEAU -- code de base sans technique propre de Jojo>
 <!--  foreach ($_GET as $key => $value){ 
           
           echo "<tr>
@@ -51,6 +53,9 @@ foreach ($_GET as $key => $value){
           <td> $value </td>
       <tr>";
 }         -->
+
+
+
 <table>
     <thead>
         <tr>

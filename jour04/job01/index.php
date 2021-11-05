@@ -1,7 +1,7 @@
 <?php
     $i=0;
     foreach ($_GET as $value) {
-        if (isset($_GET)==true)
+        if ($value != null)
         $i++;
         
     }
