@@ -1,4 +1,4 @@
-<?php
+
 
 <form action="./index.php" method="post">
     <div>
@@ -13,6 +13,29 @@
         <button type="Submit" name="Submit">Submit</button>
     </div>
 </form>
+
+<?php
+
+    
+    if (isset($_POST['username'])=="John" && isset($_POST['password'])=="Rambo") && b {
+
+        echo "C'est pas ma guerre.";
+    }
+
+    if (isset($_POST['username'])!=="John" && isset($_POST['password'])!=="Rambo") {
+
+        echo "Votre pire cauchemar.";
+    }
+
+
+
+
+
+
+
+
+
+
 
 ?>
 
