@@ -2,9 +2,8 @@
 
 $var = 1;
 
-echo gethello ($var);
+echo gethello ();
 
-function gethello($var) {
-    if ($var==true)
+function gethello() {
     return "Hello LaPlateforme" ;
 }

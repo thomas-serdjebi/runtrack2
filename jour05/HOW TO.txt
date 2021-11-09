@@ -1,0 +1,45 @@
+FONCTIONS 
+
+<?php 
+
+fonction ISSET
+ISSET ($var) == true
+
+Comment marche une fonction en php ?
+
+function name(paramètres)  {
+
+return $val
+
+}
+
+exemple : tester si pair ou impar
+
+test (2);
+
+si je fais echo((test(2)); cela va afficher 1.
+
+function test ( $var ) {
+
+	if($var%2==0)
+		return (1)
+	else
+		return (0)
+
+ return (-1) // dans le cas ou le résultat de la fonction ne rentre 
+ni dans le if ni dans le else
+
+}
+
+le return n'est pas une focntion d'affichage mais seulement de retour de valeur.
+lorsqu'on fait un return, le code sort de notre fonction sans passer par la suite.
+
+
+si plusieurs paramètres dans la fonction :
+
+echo test(1, 2);
+
+function test($param1, $param2) {
+
+
+
