@@ -1,6 +1,5 @@
 <?php
 
-$var = 1;
 
 echo gethello ();
 

@@ -39,7 +39,7 @@ si plusieurs paramètres dans la fonction :
 
 echo test(1, 2);
 
-function test($param1, $param2) {
+function test($param1, $param2) { etc
 
 
 
