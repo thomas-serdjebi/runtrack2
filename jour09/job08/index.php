@@ -4,7 +4,7 @@ $servername = "localhost";
 $username = "root" ;
 $password = "" ;
 $dbname = "jour08";
-$tablename = "etage";
+$tablename = "salles";
 
 $con=mysqli_connect($servername, $username, $password, $dbname);
 // Check connection
@@ -13,11 +13,11 @@ if (mysqli_connect_errno())
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
-$result = mysqli_query($con, "SELECT sum(superficie) as total from etage");
+$result = mysqli_query($con, "SELECT sum(capacite) as total from salles");
 $data = mysqli_fetch_assoc($result) ;
     echo "<table border='1'>
     <tr>
-    <th>superficie_totale<th>
+    <th>capacite_totale<th>
     </tr>";
     echo "<tbody>";
     echo "<tr>";
