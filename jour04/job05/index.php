@@ -17,7 +17,7 @@
 <?php
 
     
-    if (isset($_POST['username'])=="John" && isset($_POST['password'])=="Rambo") && b
+    if (isset($_POST['username'])=="John" && isset($_POST['password'])=="Rambo" && isset()) {
      {
 
         echo "C'est pas ma guerre.";
