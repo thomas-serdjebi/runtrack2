@@ -1,31 +1,37 @@
+<form method="post">
+    <label for="prenom">Prénom :</label>
+    <input name="prenom" id="prenom" type="text" />
+    <input type="submit" value="send" name="send">
+    <input type="submit" value="reset" name="reset">
+</form>
+
+
 <?php
 
-session_start ();
+session_start();
 
-foreach ($_GET as $value)
-$_SESSION['prenom'] = $value;
+if(isset($_POST['prenom'])){
+$_SESSION['prenom'][] = $_POST['prenom'];
+}
+
+$prenoms = $_SESSION['prenom'];
+
+
+foreach($prenoms as $prenom){
+    if(isset($prenom)){
+    echo $prenom . '<br>';
+    }
+}
+
+if(isset($_POST["reset"])){
+    session_destroy();
+}
 
 
 
+
+var_dump($_SESSION);
 ?>
-
-<html>
-    <body>
-        <form action="./index.php" method="get">
-            <label for="prenom">Prénom</label>
-            <input type="text" name="prenom" type="prenom">
-            <button type="submit" name="submit">Submit</button>
-            <button type="submit" name="reset">Reset</button>
-        </form>
-
-        <p> Voici la liste des prénoms de la session :
-
-        <?php echo $_SESSION['prenom'] ?>
-        </p>
-
-
-    </body>
-</html>
 
 
 
